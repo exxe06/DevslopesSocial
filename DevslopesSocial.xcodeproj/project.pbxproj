@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FAD733D1F964ABA006F0664 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD733C1F964ABA006F0664 /* CustomView.swift */; };
+		2FAD73401F964BBF006F0664 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD733F1F964BBF006F0664 /* Constants.swift */; };
+		2FAD73421F964FFF006F0664 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD73411F964FFF006F0664 /* RoundBtn.swift */; };
+		2FAD73441F965208006F0664 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD73431F965208006F0664 /* CustomTextField.swift */; };
+		2FAD73461F965394006F0664 /* RoundedCornerBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAD73451F965394006F0664 /* RoundedCornerBtn.swift */; };
 		2FCD29AF1F9517F80051C2BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD29AE1F9517F80051C2BF /* AppDelegate.swift */; };
 		2FCD29B11F9517F80051C2BF /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCD29B01F9517F80051C2BF /* SignInVC.swift */; };
 		2FCD29B41F9517F80051C2BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD29B21F9517F80051C2BF /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FAD733C1F964ABA006F0664 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		2FAD733F1F964BBF006F0664 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2FAD73411F964FFF006F0664 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		2FAD73431F965208006F0664 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2FAD73451F965394006F0664 /* RoundedCornerBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerBtn.swift; sourceTree = "<group>"; };
 		2FCD29AB1F9517F80051C2BF /* DevslopesSocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesSocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCD29AE1F9517F80051C2BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FCD29B01F9517F80051C2BF /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -52,6 +62,10 @@
 		2FAD733A1F95315B006F0664 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FAD733C1F964ABA006F0664 /* CustomView.swift */,
+				2FAD73411F964FFF006F0664 /* RoundBtn.swift */,
+				2FAD73431F965208006F0664 /* CustomTextField.swift */,
+				2FAD73451F965394006F0664 /* RoundedCornerBtn.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -62,6 +76,14 @@
 				2FCD29B01F9517F80051C2BF /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		2FAD733E1F964BAC006F0664 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2FAD733F1F964BBF006F0664 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		2FCD29A21F9517F80051C2BF = {
@@ -85,6 +107,7 @@
 		2FCD29AD1F9517F80051C2BF /* DevslopesSocial */ = {
 			isa = PBXGroup;
 			children = (
+				2FAD733E1F964BAC006F0664 /* Util */,
 				2FAD73391F953153006F0664 /* Model */,
 				2FAD733B1F953160006F0664 /* Controller */,
 				2FAD733A1F95315B006F0664 /* View */,
@@ -252,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAD733D1F964ABA006F0664 /* CustomView.swift in Sources */,
+				2FAD73421F964FFF006F0664 /* RoundBtn.swift in Sources */,
+				2FAD73441F965208006F0664 /* CustomTextField.swift in Sources */,
 				2FCD29B11F9517F80051C2BF /* SignInVC.swift in Sources */,
 				2FCD29AF1F9517F80051C2BF /* AppDelegate.swift in Sources */,
+				2FAD73401F964BBF006F0664 /* Constants.swift in Sources */,
+				2FAD73461F965394006F0664 /* RoundedCornerBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
