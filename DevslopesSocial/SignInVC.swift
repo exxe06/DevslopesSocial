@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -18,12 +19,8 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
     @IBAction func facebookBtnTapped(_ sender: Any) {
@@ -50,6 +47,9 @@ class SignInVC: UIViewController {
                 print("JESS: Unable to authenticate with Firebase - \(error!)")
             } else {
                 print("JESS: Successfully authenticated with Firebase")
+                if let user = user {
+                    KeychainWrapper.standard.string(forKey: KEY_UID)
+                }
             }
         })
     }
