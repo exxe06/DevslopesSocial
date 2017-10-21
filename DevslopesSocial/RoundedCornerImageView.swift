@@ -1,14 +1,14 @@
 //
-//  CustomView.swift
+//  RoundedCornerImageView.swift
 //  DevslopesSocial
 //
-//  Created by exxe on 17/10/2017.
+//  Created by exxe on 21/10/2017.
 //  Copyright © 2017 exxe. All rights reserved.
 //
 
 import UIKit
 
-class CustomView: UIView {
+class RoundedCornerImageView: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +18,6 @@ class CustomView: UIView {
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         layer.cornerRadius = 3.5
-        
     }
+
 }
